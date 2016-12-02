@@ -12,7 +12,30 @@
 		9E47748C1DF114E1002EBA8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E47748A1DF114E1002EBA8B /* Main.storyboard */; };
 		9E47748E1DF114E1002EBA8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E47748D1DF114E1002EBA8B /* Assets.xcassets */; };
 		9E4774911DF114E1002EBA8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E47748F1DF114E1002EBA8B /* LaunchScreen.storyboard */; };
+		9E47749A1DF11656002EBA8B /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774981DF11656002EBA8B /* PromiseKit.framework */; };
+		9E47749B1DF11656002EBA8B /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774981DF11656002EBA8B /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E47749C1DF11656002EBA8B /* ReactiveReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774991DF11656002EBA8B /* ReactiveReSwift.framework */; };
+		9E47749D1DF11656002EBA8B /* ReactiveReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774991DF11656002EBA8B /* ReactiveReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9E4774A01DF11669002EBA8B /* ReactiveReSwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E47749F1DF11669002EBA8B /* ReactiveReSwiftBridge.swift */; };
+		9E4774B01DF12D7A002EBA8B /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774AB1DF12D7A002EBA8B /* Actions.swift */; };
+		9E4774B11DF12D7A002EBA8B /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774AD1DF12D7A002EBA8B /* CounterReducer.swift */; };
+		9E4774B21DF12D7A002EBA8B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774AF1DF12D7A002EBA8B /* AppState.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E47749E1DF11656002EBA8B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9E47749D1DF11656002EBA8B /* ReactiveReSwift.framework in Embed Frameworks */,
+				9E47749B1DF11656002EBA8B /* PromiseKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9E4774831DF114E1002EBA8B /* ReactiveReSwift-PromiseKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveReSwift-PromiseKitExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +45,12 @@
 		9E47748D1DF114E1002EBA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E4774901DF114E1002EBA8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E4774921DF114E1002EBA8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E4774981DF11656002EBA8B /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		9E4774991DF11656002EBA8B /* ReactiveReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveReSwift.framework; path = Carthage/Build/iOS/ReactiveReSwift.framework; sourceTree = "<group>"; };
+		9E47749F1DF11669002EBA8B /* ReactiveReSwiftBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveReSwiftBridge.swift; sourceTree = "<group>"; };
+		9E4774AB1DF12D7A002EBA8B /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		9E4774AD1DF12D7A002EBA8B /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		9E4774AF1DF12D7A002EBA8B /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E47749C1DF11656002EBA8B /* ReactiveReSwift.framework in Frameworks */,
+				9E47749A1DF11656002EBA8B /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +69,8 @@
 		9E47747A1DF114E1002EBA8B = {
 			isa = PBXGroup;
 			children = (
+				9E4774981DF11656002EBA8B /* PromiseKit.framework */,
+				9E4774991DF11656002EBA8B /* ReactiveReSwift.framework */,
 				9E4774851DF114E1002EBA8B /* ReactiveReSwift-PromiseKitExample */,
 				9E4774841DF114E1002EBA8B /* Products */,
 			);
@@ -54,6 +87,10 @@
 		9E4774851DF114E1002EBA8B /* ReactiveReSwift-PromiseKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				9E47749F1DF11669002EBA8B /* ReactiveReSwiftBridge.swift */,
+				9E4774AA1DF12D7A002EBA8B /* Actions */,
+				9E4774AC1DF12D7A002EBA8B /* Reducers */,
+				9E4774AE1DF12D7A002EBA8B /* State */,
 				9E4774861DF114E1002EBA8B /* AppDelegate.swift */,
 				9E4774881DF114E1002EBA8B /* ViewController.swift */,
 				9E47748A1DF114E1002EBA8B /* Main.storyboard */,
@@ -62,6 +99,30 @@
 				9E4774921DF114E1002EBA8B /* Info.plist */,
 			);
 			path = "ReactiveReSwift-PromiseKitExample";
+			sourceTree = "<group>";
+		};
+		9E4774AA1DF12D7A002EBA8B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				9E4774AB1DF12D7A002EBA8B /* Actions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		9E4774AC1DF12D7A002EBA8B /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				9E4774AD1DF12D7A002EBA8B /* CounterReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		9E4774AE1DF12D7A002EBA8B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9E4774AF1DF12D7A002EBA8B /* AppState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +135,7 @@
 				9E47747F1DF114E1002EBA8B /* Sources */,
 				9E4774801DF114E1002EBA8B /* Frameworks */,
 				9E4774811DF114E1002EBA8B /* Resources */,
+				9E47749E1DF11656002EBA8B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,7 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E4774891DF114E1002EBA8B /* ViewController.swift in Sources */,
+				9E4774B11DF12D7A002EBA8B /* CounterReducer.swift in Sources */,
+				9E4774B01DF12D7A002EBA8B /* Actions.swift in Sources */,
+				9E4774B21DF12D7A002EBA8B /* AppState.swift in Sources */,
 				9E4774871DF114E1002EBA8B /* AppDelegate.swift in Sources */,
+				9E4774A01DF11669002EBA8B /* ReactiveReSwiftBridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +324,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ReactiveReSwift-PromiseKitExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ReSwift.ReactiveReSwift-PromiseKitExample";
@@ -270,6 +340,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ReactiveReSwift-PromiseKitExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ReSwift.ReactiveReSwift-PromiseKitExample";
