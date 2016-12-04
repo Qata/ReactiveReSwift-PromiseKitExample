@@ -25,7 +25,6 @@ let mainStore = Store(
     middleware: middleware
 )
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?

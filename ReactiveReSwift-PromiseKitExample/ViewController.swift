@@ -37,4 +37,3 @@ class ViewController: UIViewController {
         mainStore.dispatch(PromiseKit.wrap { $0(AppAction.increase, nil) })
     }
 }
-
