@@ -28,12 +28,12 @@ class ViewController: UIViewController {
     @IBAction func downTouch(_ sender: AnyObject) {
         // This is just to demonstrate that you can dispatch promises directly,
         // don't actually do this, this is bad code
-        mainStore.dispatch(PromiseKit.wrap { $0(AppAction.decrease, nil) })
+        mainStore.dispatch(PromiseKit.wrap { $0(AppAction.decrease) })
     }
     
     @IBAction func upTouch(_ sender: AnyObject) {
         // This is just to demonstrate that you can dispatch promises directly,
         // don't actually do this, this is bad code
-        mainStore.dispatch(PromiseKit.wrap { $0(AppAction.increase, nil) })
+        mainStore.dispatch(PromiseKit.wrap { $0(AppAction.increase) })
     }
 }
